@@ -1,0 +1,50 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 2rem;
+  row-gap: 2rem;
+  text-align: center;
+
+  #slack {
+    display: none;
+  }
+
+  &__img--container {
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+
+    &:focus {
+      border: 5.5px solid #ebe9fe;
+      // border-radius: 500;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__hover-effect{
+    width: 100%;
+    height: 100%;
+    border-radius:50% ;
+    position: absolute;
+    z-index: 5;
+    // display: none;
+    // opacity: ;
+    background: linear-gradient(0deg, rgba(52, 64, 84, 0.75), rgba(52, 64, 84, 0.75));
+
+    .img{
+      position: absolute;
+      // bottom: 5px;
+    }
+  }
+
+  &__name {
+    grid-column: 1 / -1;
+  }
+}
