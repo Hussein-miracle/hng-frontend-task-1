@@ -1,9 +1,42 @@
 .footer {
+
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
-  span{
-    color: #667085    ;
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 6rem;
+    & > * {
+      margin-inline: .5rem;
+      cursor: pointer;
+    }
+  }
+  &__main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    span{
+      color: #667085    ;
+    }
+
+    & > * {
+      cursor: pointer;
+    }
+
+
+
+    @media screen and (max-width:35em) {
+      flex-direction: column;
+      & > *{
+        margin-block: .5rem;
+      }
+    }
   }
 }
