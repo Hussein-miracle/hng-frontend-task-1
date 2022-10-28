@@ -6,6 +6,7 @@ const Content = () => {
       <LinkCard
         linkName="Twitter Link"
         url="https://twitter.com/hussein_miracle"
+        id={"twitter"}
       />
       <LinkCard
         linkName="Zuri Team"
@@ -13,6 +14,7 @@ const Content = () => {
         url="https://training.zuri.team/"
       />
       <LinkCard
+      refed={true}
         linkName="Python Books"
         url="http://books.zuri.team"
         id={"book__python"}
